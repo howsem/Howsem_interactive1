@@ -1,0 +1,725 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $(".play").hover(function(){
+    $('.play').toggleClass('click1');
+    });
+    $(".pause").hover(function(){
+    $(this).toggleClass('click2');
+    });
+    $(".stop").hover(function(){
+    $(this).toggleClass('click3');
+    });
+    $(".next").hover(function(){
+    $(this).toggleClass('click4');
+    });
+    $(".forward").hover(function(){
+    $(this).toggleClass('click5');
+    });
+
+    $(".play").click(function(){
+      $(".dot").removeClass('pasuing');
+      $(".dot").removeClass('stoping');
+      $(".dot").removeClass('forwarding');
+      $(".dot").removeClass('nexting');
+      $(".dot").addClass('playing');
+    });
+    $(".pause").click(function(){
+      $(".dot").removeClass('playing');
+      $(".dot").removeClass('stoping');
+      $(".dot").removeClass('forwarding');
+      $(".dot").removeClass('nexting');
+      $(".dot").addclass("pausing");
+    });
+    $(".stop").click(function(){
+      $(".dot").removeClass('playing');
+      $(".dot").removeClass('pasuing');
+      $(".dot").removeClass('forwarding');
+      $(".dot").removeClass('nexting');
+      $(".dot").addClass('stoping');
+    });
+    $(".forward").click(function(){
+      $(".dot").removeClass('playing');
+      $(".dot").removeClass('pasuing');
+      $(".dot").removeClass('stoping');
+      $(".dot").removeClass('nexting');
+      $(".dot").addClass('forwarding');
+    });
+    $(".next").click(function(){
+      $(".dot").removeClass('playing');
+      $(".dot").removeClass('pasuing');
+      $(".dot").removeClass('stoping');
+      $(".dot").removeClass('forwarding');
+      $(".dot").toggleClass('nexting');
+    });
+
+  });
+  </script>
+
+  <style>
+
+  @import url("https://use.typekit.net/aax3lyj.css");
+  body {
+    margin:0px;
+    background-color: #000C1E;
+
+  }
+  .background{
+    width:100vw;
+    height:100vw;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+  }
+  .cluster {
+    width:5%;
+    height:5%;
+    position:relative;
+    float: left;
+    margin:2vw;
+    z-index: 1;
+  }
+
+  .cross .quadrant:nth-child(1) {
+    width:48%;
+    height:48%;
+    border-bottom:1px solid #0042E5;
+    border-right:1px solid #0042E5;
+    float:left;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cross .quadrant:nth-child(2) {
+    width:48%;
+    height:48%;
+    border-bottom:1px solid #0042E5;
+    border-left:1px solid #0042E5;
+    float:left;
+    position: relative;
+    z-index: 1;
+  }
+  .cross .quadrant:nth-child(3) {
+    width:48%;
+    height:48%;
+    border-top:1px solid #0042E5;
+    border-right:1px solid #0042E5;
+    float:left;
+    position: relative;
+    z-index: 1;
+  }
+  .cross .quadrant:nth-child(4) {
+    width:48%;
+    height:48%;
+    border-top:1px solid #0042E5;
+    border-left:1px solid #0042E5;
+    float:left;
+    position: relative;
+    z-index: 1;
+  }
+  .cross:hover .quadrant {
+    border-color: #F98200;
+  }
+  .center {
+    width: 80vw;
+    margin:auto;
+    padding-top: 15.8vw;
+  }
+
+  .title {
+    width:100%;
+    font-family: din-2014, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 40pt;
+    color:#F98200;
+    z-index: 2;
+    text-align: center;
+  }
+  .secondarytitle {
+    width:100%;
+    font-family: din-2014, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18pt;
+    color:#F98200;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .blank {
+    height:55vh;
+  }
+  .main {
+    height: 70vh;
+    max-width: 1200px;
+    margin:auto;
+    margin-top:150px;
+    position: relative;
+    z-index: 10;
+  }
+  .menu {
+    width:95%;
+    height:200px;
+    margin:auto;
+    padding:auto;
+    z-index: 10;
+    margin-bottom: 200px;
+  }
+  .play{
+    height:150px;
+    width:150px;
+    margin-right: 20px;
+    background-image: url("png/Functionalist-06.png");
+    background-size:contain;
+    background-position: center;
+    float: left;
+  }
+  .pause{
+    height:150px;
+    width:150px;
+    margin-right: 20px;
+    background-image: url("png/Functionalist-08.png");
+    background-size:contain;
+    background-position: center;
+    float: left;
+  }
+  .stop{
+    height:150px;
+    width:150px;
+    margin-right: 20px;
+    background-image: url("png/Functionalist-07.png");
+    background-size:contain;
+    background-position: center;
+    float: left;
+  }
+  .next{
+    height:150px;
+    width:300px;
+    margin-right: 20px;
+    background-image: url("png/Functionalist-09.png");
+    background-size:contain;
+    background-position: center;
+    float: left;
+  }
+  .forward{
+    height:150px;
+    width:300px;
+    background-image: url("png/Functionalist-05.png");
+    background-size:contain;
+    background-position: center;
+    float: left;
+  }
+  .click1 {
+    background-image: url("png/Functionalist_A-06.png");
+  }
+  .click2 {
+    background-image: url("png/Functionalist_A-08.png");
+  }
+  .click3 {
+    background-image: url("png/Functionalist_A-07.png");
+  }
+  .click4 {
+    background-image: url("png/Functionalist_A-09.png");
+  }
+  .click5 {
+    background-image: url("png/Functionalist_A-05.png");
+  }
+  .container {
+    margin-top:0;
+    height:40vh;
+    width: inherit;
+  }
+  .dot {
+    margin:auto;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background-color: #F98200;
+    z-index: 10;
+    position: relative;
+  }
+  .playing {
+    animation: playing 0.5s infinite;
+    transition: all 0.1s ease-in-out;
+  }
+  .pausing {
+    background-color: #000C1E;
+    border: 2px solid #F98200;
+    transition: all 0.1s ease-in-out;
+  }
+  .stoping {
+    background-color: #000C1E;
+    border: 2px solid #0042E5;
+    transition: all 0.1s ease-in-out;
+  }
+  .forwarding {
+    background-color: #000C1E;
+    border: 2px solid #0042E5;
+    border-top: 2px solid #F98200;
+    animation: spin 2s linear infinite;
+  }
+  .nexting {
+  animation: nexting .5s linear;
+  }
+  @keyframes playing {
+      0%   {opacity: 1}
+      50%  {opacity: 0}
+      100% {opacity: 1}
+  }
+  @keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes nexting {
+    0%   {border-radius: 50%;}
+    50%  {border-radius: 0%;}
+    100% {border-radius: 50%;}
+}
+  </style>
+
+
+</head>
+
+<body>
+  <div class="background">
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+    <div class="cluster cross">
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+      <div class="quadrant"></div>
+    </div>
+  </div>
+  <div class="center">
+  <div class="title">
+    Play Controls
+  </div>
+  <div class="secondarytitle">
+    The next generation play control system, first license-free bio-system serving the producing class.
+  </div>
+</div>
+  <div class="blank"></div>
+
+  <div class="main">
+    <div class="menu">
+      <div class="play">
+      </div>
+      <div class="pause">
+      </div>
+      <div class="stop">
+      </div>
+      <div class="next">
+      </div>
+      <div class="forward">
+      </div>
+    </div>
+    <div class="container">
+      <div class="dot">
+      </div>
+    </div>
+
+  </div>
+
+
+
+</body>
+</html>

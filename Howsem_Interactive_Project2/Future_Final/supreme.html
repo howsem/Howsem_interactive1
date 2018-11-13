@@ -1,0 +1,168 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+  // $(document).ready(function(){
+  //   $("title").hover(function(){
+  //       $('btn').toggleClass('hover');
+  //   });
+  // });
+  function scrollWin() {
+    window.scrollTo(0, 1500);
+}
+  </script>
+
+  <style>
+
+   @import url("https://use.typekit.net/aax3lyj.css");
+
+  body {
+    margin:0px;
+    background-color: #FCF6EB;
+  }
+  .main {
+    max-width: 1200px;
+    margin:auto;
+  }
+
+  .content{
+    height: 100vh;
+  }
+
+  .play{
+    height: 100%;
+    width:33.33%;
+    float: left;
+  }
+    .animation1 {
+      background-image: url("gif/play.gif");
+      width:300px;
+      height:300px;
+      margin-top:30%;
+      margin-left: auto;
+      margin-right: auto;
+      background-size: contain;
+    }
+    .text1 {
+      font-family: 'mr-eaves-modern', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25pt;
+      text-align: center;
+    }
+  .next{
+    height: 100%;
+    width:33.33%;
+    float: left;
+  }
+    .animation2 {
+    background-image: url("gif/next.gif");
+    width:300px;
+    height:300px;
+    margin-top:30%;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: contain;
+    }
+
+  .forward{
+    height: 100%;
+    width:33.33%;
+    float: left;
+  }
+  .animation3 {
+  background-image: url("gif/forward.gif");
+  width:300px;
+  height:300px;
+  margin-top:30%;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: contain;
+  }
+  .title {
+    width:70%;
+    height: 25vh;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 300px;
+    padding-bottom: 500px;
+    font-family: 'mr-eaves-modern', sans-serif;
+    font-style: normal;
+    font-size: 6.5vh;
+  }
+  .firsttitle{
+    font-weight: 350;
+    display: block;
+  }
+  .secondarytitle{
+    font-weight: 400;
+  }
+  span{
+    color: #C63838;
+  }
+  .btn {
+    background-color: inherit;
+    width:300px;
+    height: 180px;
+    margin-right:0;
+    font-family: 'mr-eaves-modern', sans-serif;
+    font-style: normal;
+    font-size: 3.5vh;
+    font-weight: 400;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    float: right;
+  }
+
+
+  </style>
+
+</head>
+
+<body>
+
+ <div class="main">
+
+   <div class="title">
+     <div class="firsttitle">play controls</div>
+     <div class="secondarytitle">all about your <span>fingers</span></div>
+     <button onclick="scrollWin()" class="btn">sync & instruction</button>
+   </div>
+
+   <div class="content">
+     <div class="play">
+       <div class="animation1">
+       </div>
+       <div class="text1">
+         "a simple tap!"
+       </div>
+     </div>
+     <div class="next">
+       <div class="animation2">
+       </div>
+       <div class="text1">
+         "swipe!"
+       </div>
+     </div>
+     <div class="forward">
+       <div class="animation3">
+       </div>
+       <div class="text1">
+         "scoll and release!"
+       </div>
+     </div>
+   </div>
+ </div>
+
+</body>
+</html>
