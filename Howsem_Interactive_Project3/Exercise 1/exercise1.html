@@ -4,9 +4,177 @@
     <meta charset="utf-8">
     <title>title</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $(".rrr").click(function(){
+          $(".respond").addClass('click');
+          $(".question").removeClass('click');
+          $('.proposal').removeClass('click');
+      });
+      $(".qqq").click(function(){
+          $('.question').addClass('click');
+          $('.proposal').removeClass('click');
+          $(".respond").removeClass('click');
+      });
+      $(".ppp").click(function(){
+          $('.proposal').addClass('click');
+          $(".respond").removeClass('click');
+          $(".question").removeClass('click');
+      });
+    });
+    </script>
+    <style>
+
+    @import url("https://use.typekit.net/wvk4isw.css");
+
+
+    body{
+      margin:0px;
+      border:0px;
+      background-color: #d70000;
+    }
+
+    .center{
+      max-width: 80vw;
+      height:100vh;
+      margin:auto;
+      z-index: 999;
+    }
+    .menu {
+      width:60vw;
+      height:60px;
+      margin:auto;
+      margin-top:5vh;
+      font-family: ff-scala-sans-pro, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 20pt;
+      color:#881919;
+      z-index: 999999;
+    }
+    .rrr {
+      width:10vw;
+      margin-right: 15vw;
+      float: left;
+      z-index: 999999;
+    }
+    .qqq {
+      width:10vw;
+      margin-right: 15vw;
+      float: left;
+      text-align: center;
+      z-index: 999999;
+    }
+    .ppp {
+      width:10vw;
+      float: left;
+      text-align: right;
+      z-index: 999999;
+    }
+
+    .container {
+      width:inherit;
+      height:75vh;
+      margin:auto;
+      margin-top:10vh;
+      z-index: 0;
+    }
+    .respond {
+      width:60vw;
+      height:75vh;
+      margin-left: 10vw;
+      margin-top:10vh;
+      font-family: ff-scala-sans-pro, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 20pt;
+      opacity: 0;
+      position:absolute;
+      line-height:33pt;
+      z-index: 10;
+      color:white;
+    }
+    .question {
+      width:70vw;
+      height:75vh;
+      padding-top:15vh;
+      margin-left: 5vw;
+      font-family: ff-scala-sans-pro, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 35pt;
+      text-align: center;
+      opacity: 0;
+      position:absolute;
+      color:white;
+    }
+    .proposal {
+      width:70vw;
+      height:75vh;
+      margin-left: 7vw;
+      padding-top:15vh;
+      font-family: ff-scala-sans-pro, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 20pt;
+      opacity: 0;
+      position:absolute;
+      color:white;
+    }
+    .pps1 {
+      width:40%;
+      margin-right: 10%;
+      float:left;
+      position: relative;
+    }
+    .pps2 {
+      width:40%;
+      float:left;
+      position: relative;
+    }
+
+    .click {
+      opacity: 1;
+      transition: all 0.2s ease-in-out;
+    }
+
+    </style>
   </head>
+
   <body>
-    <!-- page content -->
+  <div class="center">
+    <div class="menu">
+      <div class="rrr">
+        Respond
+      </div>
+      <div class="qqq">
+        Question
+      </div>
+      <div class="ppp">
+        Proposals
+      </div>
+    </div>
+    <div class="container">
+      <div class="respond">
+        “Your Phone Company is watching” is a TED lecture about our personal information and our privacy. Malte Spitz, who is the speaker, gave us a warning that our private information could be monitored, because the phone company is storing our information collected by our phones. As an international student who is from China, which is an undemocratic country, I felt uncomfortable to talk about personal information collected by another bigger group like a company or the government. However, it’s irrational that you can’t have your control of your private information.<br><br>
+        In addition, I read another essay about Chinese government monitoring people’s social networks. “Learning to Survive Without WeChat”is an interesting article that talks about WeChat, an app that combines chatting, social media, payment and location, is used by the Chinese government. Some accounts got blocked due to some fake or political articles and posts. In my personal aspect, it’s irrational and threatening that one might get arrested because of the political inclination.
+      </div>
+      <div class="question">
+        What kind of information or data that the government needs to convict someone of a crime?
+      </div>
+      <div class="proposal">
+        <div class="pps1">
+          PROPOSAL 1<br><br>
+          I will design a webpage that contains piles of information like chat records, browser histories, individual’s backgrounds etc.. Audiences will play a role as the government officers who tries to find out a political criminal.
+        </div>
+        <div class="pps2">
+          PROPOSAL 2<br><br>
+          I propose creating a social media app that provides all kinds of news, especially political articles to the users. As a user, you can comment below the news. However, if your opinion is against to the government or contain some sensitive terms such as the name of the president, you would get arrested.
+        </div>
+      </div>
+    </div>
+  </div>
   </body>
 </html>
