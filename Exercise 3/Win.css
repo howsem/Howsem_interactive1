@@ -1,0 +1,22 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #cccccc;
+}
+.win {
+  width: 40vw;
+  margin:auto;
+  padding-top:200px;
+  font-family: adobe-garamond-pro, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54pt;
+}
+.message {
+  width: 40vw;
+  margin:auto;
+  font-family: adobe-garamond-pro, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24pt;
+}

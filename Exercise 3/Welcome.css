@@ -1,0 +1,32 @@
+
+body {
+  margin:0;
+  background-color: #cccccc;
+}
+a:link, a:visited {
+  color: blue;
+  border-width: 0px 0px 4px 0px;
+  border-style: solid;
+}
+a {
+  text-decoration: none;
+}
+.welcoming {
+  width:98vw;
+  margin-left:2vw;
+  padding-top:3vh;
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 72pt;
+  color:black;
+  line-height: 91pt;
+
+}
+.italic {
+  font-weight: 700;
+  font-style: italic;
+}
+.normal {
+  font-weight: 400;
+}

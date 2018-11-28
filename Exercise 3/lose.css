@@ -1,0 +1,36 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.sun {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 50vw;
+  top: 50vh;
+  margin-left: -100px;
+  background-color: yellow;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 410px;
+  position: relative;
+  transform-origin: 50%;
+}
+
+.sec1, .sec3, .sec5 {
+  background-color: #36b1a1;
+}
+
+.sec2, .sec4 {
+  background-color: red;
+}

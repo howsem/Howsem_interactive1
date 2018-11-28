@@ -1,0 +1,117 @@
+body {
+  margin:0px;
+  background-color: #cccccc;
+}
+a{
+  text-decoration: none;
+}
+a:link, a:visited {
+  color: blue;
+}
+.dock {
+  width:25vw;
+  height: 100vh;
+  min-width: 300px;
+  color:blue;
+  margin-left: 100px;
+  position: absolute;
+  overflow: hidden;
+}
+.title{
+  width:20vw;
+  margin-top:50px;
+  font-family: adobe-garamond-pro, serif;
+  font-style: normal;
+}
+.dumb{
+  font-size: 54pt;
+  font-weight: 700;
+}
+.subtitle{
+  padding-bottom: 12px;
+  font-weight: 700;
+  font-size: 18pt;
+}
+.log {
+  width:20vw;
+  height:50vh;
+  margin-top:30px;
+  font-family: adobe-garamond-pro, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24pt;
+}
+.loginfo{
+  margin-top:20px;
+  margin-left:20px;
+  font-size: 18pt;
+  font-weight: 400;
+  opacity: 0
+}
+.control{
+  width:20vw;
+  font-family: adobe-garamond-pro, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24pt;
+  line-height: 45pt;
+}
+.summarize{
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  cursor:pointer;
+}
+
+.discard{
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  cursor:pointer;
+}
+.convict{
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  cursor:pointer;
+}
+.refresh{
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  cursor:pointer;
+}
+
+.text {
+  width:75vw;
+  height: 100vh;
+  margin-left:25vw;
+  position: absolute;
+  overflow: scroll;
+  font-family: adobe-garamond-pro, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18pt;
+  color:black;
+  opacity: 1
+}
+.info {
+  font-style: italic;
+  color:blue;
+}
+.summary {
+  width:75vw;
+  height: 100vh;
+  margin-left:25vw;
+  margin-top:50px;
+  position: absolute;
+  overflow: scroll;
+  font-family: adobe-garamond-pro, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18pt;
+  color:black;
+  opacity: 0
+}
+.on{
+  opacity: 1
+}
+.off{
+  opacity: 0
+}
