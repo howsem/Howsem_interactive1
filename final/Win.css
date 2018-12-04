@@ -1,0 +1,49 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #cccccc;
+}
+a{
+  text-decoration: none;
+}
+a:link, a:visited {
+  color: blue;
+}
+.win {
+  width:40vw;
+  margin-left:15vw;
+  padding-top:150px;
+  font-family: adobe-garamond-pro, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48pt;
+  position: absolute;
+}
+.message {
+  width:40vw;
+  margin-top:20px;
+  font-family: adobe-garamond-pro, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36pt;
+}
+.youwin{
+  width:30vw;
+  margin-left: 65vw;
+  margin-top:10vh;
+  font-family: arial,sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48pt;
+  color:blue;
+  position: absolute;
+}
+.back{
+  margin-top:60vh;
+
+}
+span{
+  border-width: 0 0 2px;
+  border-style: solid;
+  border-color: blue;
+}

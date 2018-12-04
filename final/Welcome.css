@@ -1,0 +1,50 @@
+
+body {
+  margin:0;
+  background-color: #cccccc;
+}
+a:link, a:visited {
+  color: blue;
+  border-width: 0px 0px 4px 0px;
+  border-style: solid;
+}
+a {
+  text-decoration: none;
+}
+.welcoming {
+  width:48vw;
+  margin-left:10vw;
+  padding-top:20vh;
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36pt;
+  color:black;
+  position: absolute;
+  }
+.right{
+  width:38vw;
+  margin-left: 55vw;
+  padding-top:8vh;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  font-size: 36pt;
+  color:blue;
+  position: absolute;
+}
+.instruction{
+  max-height: 75vh;
+  overflow: scroll;
+}
+.yellow {
+  background-color: yellow;
+}
+.button {
+  margin-top:40px;
+}
+.underline {
+  border-style: solid;
+  border-width: 0 0 3px;
+  border-color: blue;
+  cursor:pointer;
+}
