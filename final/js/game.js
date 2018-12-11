@@ -23,7 +23,7 @@ console.log ("current convict starts at" + convictCount);
     console.log ("the current CONVICT count is " + convictCount);
 
     if (convictCount>2) {
-    window.location.replace("final_lose.html");
+    window.location.replace("final_Lose.html");
     }
 
   });
