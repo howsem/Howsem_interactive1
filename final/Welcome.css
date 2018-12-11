@@ -4,7 +4,7 @@ body {
   background-color: #cccccc;
 }
 a:link, a:visited {
-  color: blue;
+  color: inherit;
   border-width: 0px 0px 4px 0px;
   border-style: solid;
 }
@@ -15,7 +15,7 @@ a {
   width:48vw;
   margin-left:10vw;
   padding-top:20vh;
-  font-family: adobe-garamond-pro, serif;
+  font-family: linotype-sabon,serif;
   font-weight: 700;
   font-style: normal;
   font-size: 36pt;
@@ -26,7 +26,7 @@ a {
   width:38vw;
   margin-left: 55vw;
   padding-top:8vh;
-  font-family: arial, sans-serif;
+  font-family: ff-scala-sans-pro, sans-serif;
   font-weight: bold;
   font-size: 36pt;
   color:blue;
@@ -47,4 +47,7 @@ a {
   border-width: 0 0 3px;
   border-color: blue;
   cursor:pointer;
+}
+.underline:hover{
+  color:yellow;
 }
