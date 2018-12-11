@@ -12,7 +12,7 @@ console.log ("current convict starts at" + convictCount);
     console.log ("the current count is" + discardCount);
 
     if (discardCount>2) {
-    window.location.replace("final_win.html");
+    window.location.replace("final_Win.html");
     }
 
   });
