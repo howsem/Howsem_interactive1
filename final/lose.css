@@ -10,8 +10,8 @@ a:link, a:visited {
   color: inherit;
 }
 .lose {
-  width:40vw;
-  margin-left:15vw;
+  width:55vw;
+  margin-left:10vw;
   padding-top:150px;
   font-family: linotype-sabon,sans-serif;
   font-style: normal;
@@ -20,7 +20,7 @@ a:link, a:visited {
   position: absolute;
 }
 .message {
-  width:50vw;
+  width:55vw;
   margin-top:50px;
   font-family: linotype-sabon,sans-serif;
   font-style: normal;
@@ -30,7 +30,7 @@ a:link, a:visited {
 .trump {
   width:720px;
   height: 480px;
-  margin-left: 35vw;
+  margin-left: 20vw;
   margin-top:30vh;
   background-image: url("images/Trump_lose.png");
   background-repeat: no-repeat;
@@ -41,7 +41,7 @@ a:link, a:visited {
 }
 .youlose{
   width:30vw;
-  margin-left: 65vw;
+  margin-left: 62vw;
   margin-top:10vh;
   font-family: ff-scala-sans-pro, sans-serif;
   font-style: normal;
@@ -51,7 +51,14 @@ a:link, a:visited {
   position: absolute;
 }
 .back{
-  margin-top:65vh;
+  position: absolute;
+  margin-left: 65vw;
+  margin-top:80vh;
+  font-family: ff-scala-sans-pro, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48pt;
+  color:blue;
 }
 .back:hover{
   color:yellow;
